@@ -42,6 +42,9 @@ Known Issues / Bugs.
 - I haven't tested this with SkyQ, but I don't think it will work.
 
 - If you have multiple STB's, it will control a random one.
+
+- I don't actually test that we get what we expect, because as this
+  is reverse engineered, I've no idea what I actually expect to expect.
   
 Credits and Acknowledgments.
 ============================
