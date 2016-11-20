@@ -112,25 +112,6 @@ home server and configured your webserver to use.
 
 - The other tabs aren't important as you aren't publishing this.
 
-Some detail.
-============
-
-The Sky box multicast SSDP packets announcing it's existence. Then
-you can find the services via URI's like :-
-
-- http://skyboxip:49153/description5.xml
-- You must set your user agent as "SKY_skyplus" or it will ignore you.
-- But this isn't actually needed to control the box, just to parse
-the xml 
-
-I reverse engineered the protocol from wireshark pcaps based on the
-ipad app to make this work. I'm doing very crude sending of things
-to the sockets that the ipad app does.
-
-The Alexa skill implements the WeMo protocol (https://www.wemo.com/),
-so that Alexa can discover the skill and it can work within your
-home network.
-
 Known Issues / Bugs.
 ====================
 
