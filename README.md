@@ -23,32 +23,29 @@ Preamble.
 
 This is a PITA because of how things work.
 
-1.) We cannot just run an Alexa service in the amazon cloud via a lambda
+- We cannot just run an Alexa service in the amazon cloud via a lambda
 function or whatever, because we need to run the service within your
 firewall.
-
-2.) We cannot just emulate a locally controllable device using something
+- We cannot just emulate a locally controllable device using something
 like the WeMo protocol, as that only supports "On/Off" type functionality
 and we need more. The Phillips home automation devices offer more control
 but nothing that would be actually useful for a STB.
-
-3.) I cannot run a generic webservice and make it avalible to more than
+- I cannot run a generic webservice and make it avalible to more than
 myself because you need to speak to your specific home to control your
 STB.
-
-4.) Assuming you have a dynamic IPv4 address, that is 
+- Assuming you have a dynamic IPv4 address, that is 
 going to be a problem too.
 
 Therefore, to make this work.
 
-a.) You need to configure an Alexa service.
-b.) You need locally running code on a device (like a home server
+- You need to configure an Alexa service.
+- You need locally running code on a device (like a home server
 or a home raspberry pi).
-c.) You need either a static IPv4 address or Dynamic DNS to give you
+- You need either a static IPv4 address or Dynamic DNS to give you
 a static hostname.
-d.) You need to use an SSL certifiate, even for your own in dev apps.
+- You need to use an SSL certifiate, even for your own in dev apps.
 Thankfully this can be a self-signed certificate.
-e.) You need a webserver to do the SSL and forward it to the alexa.py
+- You need a webserver to do the SSL and forward it to the alexa.py
 app. I use nginx, but other options like apache would be fine.
 
 Network Setup.
