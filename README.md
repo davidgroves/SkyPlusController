@@ -1,5 +1,5 @@
-Usage.
-======
+Usage (Sky Remote CLI).
+=======================
 
 Run this on a machine on the same LAN as a Sky Set Top Box.
 
@@ -15,6 +15,11 @@ $ ./skyremote.py pause
 
 For the full set of controls, look at the button dict in the code.
 
+Usage (Alexa Skill).
+====================
+
+FIXME
+
 How it Works.
 =============
 
@@ -29,6 +34,10 @@ the xml
 I reverse engineered the protocol from wireshark pcaps based on the
 ipad app to make this work. I'm doing very crude sending of things
 to the sockets that the ipad app does.
+
+The Alexa skill implements the WeMo protocol (https://www.wemo.com/),
+so that Alexa can discover the skill and it can work within your
+home network.
 
 Known Issues / Bugs.
 ====================
@@ -51,3 +60,6 @@ Credits and Acknowledgments.
 
 ssdp.py from Dan Krause, see https://gist.github.com/dankrause/6000248
 and https://github.com/davea/doxieapi/blob/master/doxieapi/ssdp.py
+
+I followed parts of http://www.instructables.com/id/Hacking-the-Amazon-Echo/
+when building the WeMo app.

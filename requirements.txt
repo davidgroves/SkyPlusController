@@ -1,0 +1,3 @@
+fauxmo
+ask-alexa-pykit
+alexandra
