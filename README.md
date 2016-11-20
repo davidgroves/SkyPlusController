@@ -112,6 +112,15 @@ home server and configured your webserver to use.
 
 - The other tabs aren't important as you aren't publishing this.
 
+Usage (Alexa Skill).
+====================
+
+Say :- 
+- Alexa, tell sky plus pause.
+- Alexa, tell sky plus place.
+- Alexa, tell sky plus bbc two.
+- Alexa, tell sky plus sky sports one.
+
 Known Issues / Bugs.
 ====================
 
@@ -124,8 +133,8 @@ Known Issues / Bugs.
 fixable but as I only have one STB it isn't a priority for me.
 - I don't actually test that we get what we expect, because as this
   is reverse engineered, I've no idea what I actually expect to expect
-  when communicating with the STB.
-  
+  when communicating with the STB. 
+
 Credits and Acknowledgments.
 ============================
 
