@@ -133,7 +133,17 @@ Known Issues / Bugs.
 fixable but as I only have one STB it isn't a priority for me.
 - I don't actually test that we get what we expect, because as this
   is reverse engineered, I've no idea what I actually expect to expect
-  when communicating with the STB. 
+  when communicating with the STB.
+  
+Likely Future Enchancements.
+============================
+
+Rework comms methods to avoid local webservice.
+
+- Have code run in Amazon Lambda.
+- Pop buttons to press on SQS queue.
+- Have local agent consume entries in that queue and use local code
+to "press buttons".
 
 Credits and Acknowledgments.
 ============================
