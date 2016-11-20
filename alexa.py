@@ -19,6 +19,12 @@ def play_intent(slots, session):
     skyremote.press(stbip, "play")
     return alexandra.respond("Playing")
 
+@app.intent('Channel')
+def channel_intent(slots, session):
+    print(slots['channelToSet'])
+    response = skyremote.channel(stbip, slots['channelToSet'])
+    return alexandra.respond(response)
+
 if __name__ == '__main__':
     stbip = skyremote.findstb()
     app.run('0.0.0.0', 8080, debug=True)

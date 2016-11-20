@@ -5,6 +5,15 @@
     },
     {
       "intent": "Play"
+    },
+    {
+      "intent": "Channel",
+      "slots": [
+        {
+          "name": "channelToSet",
+          "type": "CHANNEL"
+        }
+      ]
     }
   ]
 }
