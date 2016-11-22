@@ -124,7 +124,7 @@ Known Issues / Bugs.
 - Debugging code is ugly because I couldn't be bothered to make
   bytes to string conversions work with logging.
 - Tested on my STB and my STB alone. Other STB hardware or software
-  will not work.
+  may not work.
 - I haven't tested this with SkyQ, but I don't think it will work.
 - If you have multiple STB's, it will control a random one. This is
 fixable but as I only have one STB it isn't a priority for me.
