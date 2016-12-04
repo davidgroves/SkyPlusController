@@ -7,19 +7,25 @@ import math
 import time
 
 # Global for debugging.
-DEBUG = False
+DEBUG = True
+# Set True for Sky Q
+Q = False
 
 # Define the command codes for the buttons.
 button = {
     'power': 0,
     'select': 1,
     'backup': 2,
+    'dismiss': 2,
     'channelup': 6,
     'channeldown': 7,
     'interactive': 8,
+    'sidebar': 8,
     'help': 9,
     'services': 10,
+    'search': 10,
     'tvguide': 11,
+    'home': 11,
     'i': 14,
     'text': 15,
     'up': 16,
@@ -380,10 +386,15 @@ channels = {
 
 
 def press(stbaddr, b):
-    # Open the socket
-    sock = socket.create_connection((stbaddr, 49160))
 
-    # Expect banner
+    if Q:
+        port = 5900
+    else:
+        port = 49500
+    # Open the socket
+    sock = socket.create_connection((stbaddr, port))
+
+    # Expect banner for Sky+
     data = sock.recv(4096)
     if (DEBUG):
         print ("RECV: ", data)
@@ -458,10 +469,11 @@ def findstb():
     services = ssdp.discover("urn:schemas-nds-com:service:SkyRemote:1")
 
     if (services):
-        for service in services:
+        for service in (x for x in services if x.st == "urn:schemas-nds-com:service:SkyRemote:1"):
             stbip = service.location.split('//')[1].split(':')[0]
             if (DEBUG):
                 print("Found a Set Top Box at: " + stbip)
+
     return stbip
 
 def main():
