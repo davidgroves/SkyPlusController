@@ -10,4 +10,7 @@ Select Select
 Dismiss dismiss
 Dismiss to dismiss
 Dismiss to diss miss
-Channel {channelToSet}
+Channel to set channel {channelToSet}
+Channel channel {channelToSet}
+Channel for channel {channelToSet}
+Channel to change channel {channelToSet}
