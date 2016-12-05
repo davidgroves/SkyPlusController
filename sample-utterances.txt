@@ -1,3 +1,13 @@
 Pause Pause
 Play Play
+Stop stop
+Record record
+TV_Guide TV Guide
+TV_Guide the TV Guide
+TV_Guide the Tee Vee Guide
+TV_Guide Tee Vee Guide
+Select Select
+Dismiss dismiss
+Dismiss to dismiss
+Dismiss to diss miss
 Channel {channelToSet}

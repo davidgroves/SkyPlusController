@@ -9,7 +9,7 @@ import time
 # Global for debugging.
 DEBUG = True
 # Set True for Sky Q
-Q = False
+Q = True
 
 # Define the command codes for the buttons.
 button = {

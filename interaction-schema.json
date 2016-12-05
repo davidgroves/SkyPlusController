@@ -7,6 +7,24 @@
       "intent": "Play"
     },
     {
+      "intent": "Stop"
+    },
+    {
+      "intent": "Record"
+    },
+    {
+      "intent": "Dismiss"
+    },
+    {
+      "intent": "Home"
+    },
+    {
+      "intent": "TV_Guide"
+    },
+    {
+      "intent": "Select"
+    },
+    {
       "intent": "Channel",
       "slots": [
         {
